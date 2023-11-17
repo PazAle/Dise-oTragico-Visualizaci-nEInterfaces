@@ -61,7 +61,7 @@
       <script src="http://argob.github.io/poncho/js/html5shiv.js"></script>
       <script src="http://argob.github.io/poncho/js/respond.min.js"></script>
   <![endif]-->
-
+  <link rel="stylesheet" href="css/estilos.css">
 </head>
 
 <body role="document" class="html front not-logged-in no-sidebars page-node i18n-es jquery-once-1-processed">
@@ -79,21 +79,26 @@
 <header>
   <nav class="navbar navbar-top navbar-default bg-celeste-argentina" role="navigation">
     <div class="container">
-      <div>
-        <div class="navbar-header"> <a class="navbar-brand" href="home.html" aria-label="Argentina.gob.ar Presidencia de la Nación"> <img alt="Argentina.gob.ar" src="img/argentina.gob.ar.png" height="50"> </a> <a class="btn btn-mi-argentina btn-login visible-xs"
-                            href="/proyectos/mi-argentina/v3/"><i class="icono-arg-mi-argentina fa-fw"></i></a> <a class="btn bg-white btn-login visible-xs" href="#" onclick="$('.navbar.navbar-top').addClass('state-search');"><span class="fa fa-search fa-fw"></span></a> </div>
-        <div class="nav navbar-nav navbar-right hidden-xs"> <a href="#" onclick="$('.navbar.navbar-top').removeClass('state-search');" class="btn btn-mi-argentina visible-xs"> <i class="fa fa-times"></i> </a>
-          <div style="float: left">
+        <div class="navbar-header">
+            <!--  -->
+            <a class="navbar-brand" href="home.html" aria-label="Argentina.gob.ar Presidencia de la Nación">
+                <img alt="Argentina.gob.ar" src="img/argentina.gob.ar.png" height="50">
+            </a>
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
             <div class="input-group">
-              <input id="buscar" type="text" class="form-control input-search" aria-label="Buscar viajes" placeholder="Buscar viajes ...">
-              <span class="input-group-btn">
-              <button class="btn bg-white"  type="button" aria-label="Buscar"><i class="fa fa-search text-primary"></i></button>
-              </span> </div>
-          </div>
-          <a href="#" class="dropdown-toggle btn btn-mi-argentina hidden-xs bg-white" aria-label="Ingresar a Mi Argentina" data-toggle="dropdown"> miArgentina</a> </div>
-      </div>
+                <input id="buscar" type="text" class="form-control input-search" aria-label="Buscar viajes" placeholder="Buscar viajes ...">
+                <span class="input-group-btn">
+                    <button class="btn bg-white" type="button" aria-label="Buscar"><i class="fa fa-search text-primary"></i></button>
+                </span>
+            </div>
+            <div class="navbar-buttons">
+                <a href="home.html" class="btn btn-mi-argentina bg-white">Home</a>
+                <a href="destinos.html" class="btn btn-mi-argentina bg-white">Destinos</a>
+            </div>
+        </div>
     </div>
-  </nav>
+</nav>
 </header>
 <main role="main"> <a id="main-content"></a>
   <div class="container"></div>
@@ -152,13 +157,48 @@
       <section>
 </main>
 <footer class="main-footer">
-  
-  <div class="container-fluid">
-    <div class="row sub-footer">
-      <div class="container">
-        <div class="col-sm-6 m-y-1 p-x-0"> <img class="image-responsive" height="80" src="img/logo-footer-primero-la-gente.png" alt="Primero la gente"/></div>
+  <div class="container">
+      <div class="row">
+          <div class="col-md-4 col-sm-6">
+              <h4>¿Por qué elegirnos?</h4>
+              <p>
+                  Ofrecemos una innovadora plataforma de viajes educativos subsidiados por el gobierno.<br> Promovemos la inclusión, calidad y crecimiento educativo de los estudiantes de nivel secundario del partido de la Matanza.
+              </p>
+          </div>
+          <div class="col-md-4 col-sm-6">
+              <h4>Enriquecimiento Educativo Accesible</h4>
+              <p>
+                  Brindamos viajes educativos que complementan el programa escolar, accesibles para todos los estudiantes y promovemos nuevos modos de aprendizaje.
+              </p>
+          </div>
+          <div class="col-md-4 col-sm-6">
+              <h4>Seguridad y Facilidad de Gestión</h4>
+              <p>
+                  Priorizamos la seguridad colaborando con operadores turísticos confiables, facilitando a directivos y docentes la gestión eficaz de los viajes educativos.
+              </p>
+          </div>
+          <div class="col-md-4 col-sm-6">
+              <h4>Apoyo Integral y Enriquecimiento Curricular</h4>
+              <p>
+                  Nuestros viajes, alineados con los objetivos educativos, promueven un aprendizaje experiencial y el desarrollo integral, transformando la educación de los jóvenes.                </p>
+          </div>
       </div>
-    </div>
+  </div>
+  <div class="footer-container">
+      <div class="footer-row">
+          <div class="footer-logo">
+              <img class="logo-image" src="img/logo-footer-primero-la-gente.png" alt="Primero la gente"/>
+          </div>
+          <div class="footer-text">
+              <p class="copyright-text">
+                  Copyright @2023 todos los derechos reservados.
+                  Diseñado por DT - Diseño Trágico 2.0.
+              </p>
+          </div>
+          <div class="footer-social-media">
+              <img class="social-media-image" src="img/rrss.png" alt="Redes sociales"/>
+          </div>
+      </div>
   </div>
 </footer>
 </body>
