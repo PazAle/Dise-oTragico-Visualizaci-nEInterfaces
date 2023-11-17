@@ -1,0 +1,115 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa; /* Color celeste */
+}
+
+main {
+    font-size: 1.4em; /* Tamaño de la tipografía aumentado */
+}
+
+.confirmation-card {
+    max-width: 80vw; /* Cambiamos el tamaño de la tarjeta */
+    height: 60vh;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1); /* Añadimos sombra */
+    display: flex;
+    flex-wrap: wrap; /* Para hacer responsive */
+    position: relative; /* Añadimos posición relativa para posicionamiento absoluto de los rectángulos internos */
+}
+
+.top-inner-rectangle {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%; /* Ajustamos el ancho del rectángulo interno en la parte izquierda */
+    background-color: #b2dfdb;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.inner-rectangle {
+    position: absolute;
+    bottom: 20px;
+    left: 0; /* Posicionamiento desde el borde izquierdo */
+    width: 100%; /* Ajustamos el ancho del rectángulo interno */
+    background-color: #b2dfdb; /* Color turquesa más claro */
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.image-container {
+    width: 100%;
+    height: 60%; /* Establecemos la altura al 60% del contenedor */
+    overflow: hidden;
+    border-radius: 5px;
+    margin-top: 20px; /* Añadimos margen superior */
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajustamos la imagen para cubrir completamente el contenedor */
+    border-radius: 5px; /* Añadimos bordes redondeados */
+}
+
+.info-section {
+    flex: 2; /* Cambiamos a 70% del ancho */
+    padding: 7%;
+    text-align: left; /* Alineación a la izquierda */
+    position: relative; /* Añadimos posición relativa para posicionamiento absoluto del rectángulo interno */
+}
+
+.info-section ul {
+    margin-left: 20px; /* Espaciado izquierdo aumentado */
+}
+
+.confirmation-button-section {
+    flex: 1; /* Cambiamos a 30% del ancho */
+    padding: 20px;
+    text-align: center;
+    background-color: #37bbed; /* Color verde oscuro - Teal */
+    color: #fff;
+    cursor: pointer;
+    display: flex; /* Usamos flexbox para centrar verticalmente el contenido */
+    flex-direction: column; /* Alineamos el contenido en columna */
+    justify-content: flex-end; /* Centramos el contenido al final del contenedor */
+}
+
+.confirmation-button-section p {
+    margin-top: auto; /* Empujamos el párrafo hacia la parte inferior */
+}
+
+h2, p {
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px; /* Aumentamos el tamaño de la fuente */
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #b2dfdb; /* Color verde oscuro - Teal */
+    color: seagreen;
+    transition: background-color 0.3s; /* Agregamos transición al color de fondo */
+}
+
+button:hover {
+    background-color: #0072b8; /* Cambiamos color al pasar el mouse */
+    color: white;
+}
+.texto_inferior{
+    color: white;
+}
