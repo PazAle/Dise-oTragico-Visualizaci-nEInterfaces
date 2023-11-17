@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulario de Reserva</title>
+    <meta name="description" content="Base de html y css para la creación de sitios pertenecientes a la Administración Pública Nacional de la República Argentina.">
+    <meta name="author" content="Presidencia de la Nación">
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    <!-- Nav and address bar color -->
+    <meta name="theme-color" content="#0072b8">
+    <meta name="msapplication-navbutton-color" content="#0072b8">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#0072b8">
+    <meta property="og:url" content="http://localhost:4000/proyectos/argentina/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Banco de Pruebas" />
+    <meta property="og:description" content="Base de html y css para la creación de sitios pertenecientes a la Administración Pública Nacional de la República Argentina." />
+    <meta property="og:image" content="/ejemplos/img/jumbotron.jpg" />
+    <meta property="og:locale" content="es_AR" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Banco de Pruebas" />
+    <meta name="twitter:description" content="Base de html y css para la creación de sitios pertenecientes a la Administración Pública Nacional de la República Argentina." />
+    <meta name="twitter:image" content="/ejemplos/img/jumbotron.jpg" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../node_modules/ar-poncho/dist/css/argentina.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/gh/argob/poncho@master/dist/css/encode-fontface.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/argob/poncho@master/dist/css/poncho.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/argob/poncho@master/dist/css/documentacion.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/argob/poncho@master/dist/css/icono-arg.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ 
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<body role="document" class="html front not-logged-in no-sidebars page-node i18n-es jquery-once-1-processed">
+
+<h1 class="sr-only"><small>Presidencia de la Nación</small></h1>
+<div id="skip-link"> <a href="https://www.argentina.gob.ar/#main-content" class="element-invisible element-focusable">Pasar al contenido principal</a></div>
+<div class="region region-page-top">
+<section id="campaign" role="dialog" aria-labelledby="campaign01" aria-describedby="campaign02" style="padding:0px"> <a href="/salud/coronavirus-COVID-19?utm_source=alerta_20200424&amp;utm_medium=web&amp;utm_campaign=campana_coronavirus" title="Enlace a Campaña Nacional" id="js-titulo">
+    <div class="container-fluid text-primary">
+        <header class="sr-only">
+            <h1 id="campaign01">Campañas Nacionales</h1>
+        </header>
+    </div>
+</a> </section>
+</div>
+<header>
+    <nav class="navbar navbar-top navbar-default bg-celeste-argentina" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <!--  -->
+                <a class="navbar-brand" href="/proyectos/argentina/" aria-label="Argentina.gob.ar Presidencia de la Nación">
+                    <img alt="Argentina.gob.ar" src="img/argentina.gob.ar.png" height="50">
+                </a>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+                <div class="input-group">
+                    <input id="buscar" type="text" class="form-control input-search" aria-label="Buscar viajes" placeholder="Buscar viajes ...">
+                    <span class="input-group-btn">
+                        <button class="btn bg-white" type="button" aria-label="Buscar"><i class="fa fa-search text-primary"></i></button>
+                    </span>
+                </div>
+                <div class="navbar-buttons">
+                    <a href="home.html" class="btn btn-mi-argentina bg-white">Home</a>
+                    <a href="destinos.html" class="btn btn-mi-argentina bg-white">Destinos</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+</header>
+
+<section class="formulario">
+        <form action="#" method="POST" enctype="multipart/form-data">
+        <div class="formularioReserva">
+
+            
+            <label for="date1">Ingrese fecha de comienzo:</label>
+                        <input type="date" placeholder="Ingrese la fecha de comienzo del viaje" name="date1" required>
+            <label for="date2">Ingrese fecha de fin:</label>
+                        <input type="date" placeholder="Ingrese la fecha de fin del viaje" name="date2" required>
+            
+            <div class="calendario-container">
+                <table class="calendario">
+                    <caption>Diciembre 2023</caption>
+                    <thead>
+                        <tr>
+                            <th>Dom</th>
+                            <th>Lun</th>
+                            <th>Mar</th>
+                            <th>Mié</th>
+                            <th>Jue</th>
+                            <th>Vie</th>
+                            <th>Sáb</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>x</td>
+                            <td>x</td>
+                            <td>x</td>
+                            <td>x</td>
+                            <td>x</td>
+                            <td>1</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                                <td>10</td>
+                                <td>11</td>
+                                <td>12</td>
+                                <td>13</td>
+                                <td>14</td>
+                                <td>15</td>
+                                <td>16</td>
+                        </tr>      
+                        <tr>
+                                <td>17</td>
+                                <td>18</td>
+                                <td>19</td>
+                                <td>20</td>
+                                <td>21</td>
+                                <td>22</td>
+                                <td>23</td>
+                        </tr>
+                        <tr>
+                            <td>24</td>
+                            <td>25</td>
+                            <td>26</td>
+                            <td>27</td>
+                            <td>28</td>
+                            <td>29</td>
+                            <td>30</td>
+                    </tr>
+                    </tbody>
+                </table>
+         
+                </div>
+
+            <label for="schoolName">Nombre de la institución educativa</label>
+            <input type="text" placeholder="Ingrese el nombre de la escuela" name="schoolName" required>
+
+            <label for="schoolCuit">CUIT de la institución</label>
+            <input type="int" placeholder="Ingrese el CUIT de la escuela" name="cuit" required>
+
+            <label for="name">Nombre del directivo a cargo de la institución educativa</label>
+            <input type="text" placeholder="Ingrese su nombre" name="name" required>
+
+            <label for="cuil">CUIL del directivo a cargo de la institución educativa</label>
+            <input type="text" placeholder="Ingrese el CUIL del directivo a cargo de la institución educativa" name="cuil" required>
+
+            <label for="destino">Ingrese el nombre del destino al que desea viajar</label>
+            <input type="text" placeholder="Ingrese destino de viaje" name="destino" required>
+
+            <label for="alumnos">Indique la cantidad de alumnos que realizarán el viaje:</label>
+            <select id="alumnos" name="alumnos" required>
+                <option value="alumnos1">10</option>
+                <option value="alumnos2">20</option>
+                <option value="alumnos3">30</option>
+                <option value="alumnos4">40</option>
+                <option value="alumnos5" selected>Otra cantidad de alumnos</option>
+            </select>
+
+            <label for="otroAlumnos">Si seleccionó otra cantidad, indique a continuación cantidad de estudiantes que viajan:</label>
+            <input type="text" placeholder="Ingrese la cantidad de alumnos" name="otroAlumnos">
+
+            <label for="adultos">Indique la cantidad de docentes y adultos que acompañarán a los estudiantes en el viaje:</label>
+            <select id="adultos" name="adultos" required>
+                <option value="adultos1">2</option>
+                <option value="adultos2">4</option>
+                <option value="adultos3">6</option>
+                <option value="adultos4">8</option>
+                <option value="adultos5" selected>Otra cantidad de acompañantes</option>
+            </select>
+
+            <label for="otroAdultos">Si seleccionó otra cantidad, indique a continuación cantidad de adultos que viajan:</label>
+            <input type="text" placeholder="Ingrese la cantidad de adultos acompañantes" name="otroAdultos">
+
+            <label for="domicilio">Direccion de la institución educativa</label>
+            <input type="text" placeholder="Ingrese el domicilio de la escuela" name="domicilio" required>
+
+            <label for="telefono">Teléfono de contacto</label>
+            <input type="text" placeholder="Ingrese un número telefónico de contacto" name="telefono" required>
+
+            <label for="correo">Correo electrónico</label>
+            <input type="email" placeholder="Ingrese un correo electrónico válido de contacto" name="correo" required>
+            <p>El correo electrónico ingresado será utilizado para avanzar con el proceso de reserva y correspondiente aprobación, o rechazo, del subsidio solicitado.</p>
+
+            <label for="pensionAlimenticia">Indique el tipo de pensión alimenticia</label>
+            <select id="pensionAlimenticia" name="pensionAlimenticia" required>
+                <option value="pensionAlimenticia1">Desayuno</option>
+                <option value="pensionAlimenticia2">Media Pensión</option>
+                <option value="pensionAlimenticia3">Pensión Completa</option>
+            </select>
+
+            <label for="pensionAlimenticia">Indique el tipo de pensión alimenticia</label>
+            <select id="pensionAlimenticia" name="pensionAlimenticia" required>
+                <option value="pensionAlimenticia1">Desayuno</option>
+                <option value="pensionAlimenticia2">Media Pensión</option>
+                <option value="pensionAlimenticia3">Pensión Completa</option>
+            </select>
+
+            <label for="regimenAlimenticio">Indique el tipo de régimen alimenticio predominante</label>
+                    <select id="regimenAlimenticio" name="regimenAlimenticio" required>
+                        <option value="regimenAlimenticio1">Carnívoro</option>
+                        <option value="regimenAlimenticio2">Omnívoro</option>
+                        <option value="regimenAlimenticio3">Vegano</option>
+                        <option value="regimenAlimenticio4">Vegetariano</option>
+                        <option value="regimenAlimenticio5">Sin TACC</option>
+                    </select>
+            
+        <div class="detalle-alimentacion">
+            <label for="alimentacionDetalle">Detalle alimentación</label><br>
+            <textarea placeholder="Ingrese detalle de alimentos" name="alimentacionDetalle" required></textarea>
+        </div>
+
+        <a href="confirmarReserva.html"><button type="submit" class="boton-reserva">Reservar</button></a>
+
+    </form>
+</section>
+
+<footer class="main-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <h4>¿Por qué elegirnos?</h4>
+                <p>
+                    Ofrecemos una innovadora plataforma de viajes educativos subsidiados por el gobierno.<br> Promovemos la inclusión, calidad y crecimiento educativo de los estudiantes de nivel secundario del partido de la Matanza.
+                </p>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <h4>Enriquecimiento Educativo Accesible</h4>
+                <p>
+                    Brindamos viajes educativos que complementan el programa escolar, accesibles para todos los estudiantes y promovemos nuevos modos de aprendizaje.
+                </p>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <h4>Seguridad y Facilidad de Gestión</h4>
+                <p>
+                    Priorizamos la seguridad colaborando con operadores turísticos confiables, facilitando a directivos y docentes la gestión eficaz de los viajes educativos.
+                </p>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <h4>Apoyo Integral y Enriquecimiento Curricular</h4>
+                <p>
+                    Nuestros viajes, alineados con los objetivos educativos, promueven un aprendizaje experiencial y el desarrollo integral, transformando la educación de los jóvenes.                </p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-container">
+        <div class="footer-row">
+            <div class="footer-logo">
+                <img class="logo-image" src="img/logo-footer-primero-la-gente.png" alt="Primero la gente"/>
+            </div>
+            <div class="footer-text">
+                <p class="copyright-text">
+                    Copyright @2023 todos los derechos reservados.
+                    Diseñado por DT - Diseño Trágico 2.0.
+                </p>
+            </div>
+            <div class="footer-social-media">
+                <img class="social-media-image" src="img/rrss.png" alt="Redes sociales"/>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
