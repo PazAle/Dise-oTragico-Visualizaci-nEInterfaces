@@ -67,6 +67,10 @@
     }
 }
 
+.footer-height{
+    height: 6em;
+}
+
 .footer-container {
     padding: 10px 0; 
     background-color: #f8f9fa; 

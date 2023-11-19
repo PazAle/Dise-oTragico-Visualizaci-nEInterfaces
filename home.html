@@ -79,26 +79,31 @@
 <header>
   <nav class="navbar navbar-top navbar-default bg-celeste-argentina" role="navigation">
     <div class="container">
-        <div class="navbar-header">
-            <!--  -->
-            <a class="navbar-brand" href="home.html" aria-label="Argentina.gob.ar Presidencia de la Nación">
-                <img alt="Argentina.gob.ar" src="img/argentina.gob.ar.png" height="50">
-            </a>
+      <div class="navbar-header">
+        <a class="navbar-brand" href="home.html" aria-label="Argentina.gob.ar Presidencia de la Nación">
+          <img alt="Argentina.gob.ar" src="img/argentina.gob.ar.png" height="50">
+        </a>
+        <a class="btn btn-mi-argentina btn-login visible-xs" href="/proyectos/mi-argentina/v3/">
+          <i class="icono-arg-mi-argentina fa-fw"></i>
+        </a>
+        <a class="btn bg-white btn-login visible-xs" href="#" onclick="$('.navbar.navbar-top').addClass('state-search');">
+          <span class="fa fa-search fa-fw"></span>
+        </a>
+      </div>
+      <div class="navbar-buttons" style="display: flex; align-items: center;">
+        <div class="input-group">
+          <input id="buscar" type="text" class="form-control input-search" aria-label="Buscar viajes" placeholder="Buscar viajes ...">
+          <span class="input-group-btn">
+            <button class="btn bg-white" type="button" aria-label="Buscar">
+              <i class="fa fa-search text-primary"></i>
+            </button>
+          </span>
         </div>
-        <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
-            <div class="input-group">
-                <input id="buscar" type="text" class="form-control input-search" aria-label="Buscar viajes" placeholder="Buscar viajes ...">
-                <span class="input-group-btn">
-                    <button class="btn bg-white" type="button" aria-label="Buscar"><i class="fa fa-search text-primary"></i></button>
-                </span>
-            </div>
-            <div class="navbar-buttons">
-                <a href="home.html" class="btn btn-mi-argentina bg-white">Home</a>
-                <a href="destinos.html" class="btn btn-mi-argentina bg-white">Destinos</a>
-            </div>
-        </div>
+        <a href="home.html" class="btn btn-mi-argentina bg-white">Home</a>
+        <a href="destinos.html" class="btn btn-mi-argentina bg-white">Destinos</a>
+      </div>
     </div>
-</nav>
+  </nav>
 </header>
 <main role="main"> <a id="main-content"></a>
   <div class="container"></div>
@@ -185,7 +190,7 @@
       </div>
   </div>
   <div class="footer-container">
-      <div class="footer-row">
+      <div class="footer-row footer-height mb-0">
           <div class="footer-logo">
               <img class="logo-image" src="img/logo-footer-primero-la-gente.png" alt="Primero la gente"/>
           </div>
