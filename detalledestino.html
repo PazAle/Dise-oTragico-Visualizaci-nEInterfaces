@@ -37,10 +37,10 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- <link rel="stylesheet" href="../../node_modules/ar-poncho/dist/css/poncho.min.css">
-				    
+
   <link rel="stylesheet" href="../../node_modules/ar-poncho/dist/icono-arg.css"> -->
   <link rel="stylesheet" href="../../node_modules/ar-poncho/dist/css/argentina.css">
-      
+
       <!-- PONCHO CSS:
     Recomendamos que descargues o instales 'ar-poncho' en tu proyecto.
     <link href="{{ '/node_modules/ar-poncho/dist/css/roboto-fontface.css' | prepend: site.baseurl }}" rel="stylesheet">
@@ -60,7 +60,7 @@
   <!--[if lt IE 9]>
       <script src="/node_modules/html5shiv/html5shiv.js"></script>
       <script src="/node_modules/respond.js/respond.min.js"></script>
-  <![endif]--> 
+  <![endif]-->
   <style>
   @media print {
 
@@ -102,8 +102,6 @@
       margin-bottom: 10px ;
       padding: 10px 25px ;
       text-transform: uppercase ;
-      
-
 
       }
     
@@ -117,52 +115,42 @@
 
   <body>
 
-    
-    
-    <header>
-      <nav class="navbar navbar-top navbar-default bg-celeste-argentina" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="home.html" aria-label="Argentina.gob.ar Presidencia de la Nación">
-              <img alt="Argentina.gob.ar" src="img/argentina.gob.ar.png" height="50">
-            </a>
-            <a class="btn btn-mi-argentina btn-login hidden" href="/proyectos/mi-argentina/v3/">
-              <i class="icono-arg-mi-argentina fa-fw"></i>
-            </a>
-         <!--   <a class="btn bg-white btn-login visible-xs hidden" href="#" onclick="$('.navbar.navbar-top').addClass('state-search');">
-              <span class="fa fa-search fa-fw hidden"></span>
-            </a>-->
-          </div>
-          <div class="navbar-buttons" style="display: flex; align-items: center;">
-            <div class="input-group">
-              <input id="buscar" type="text" class="form-control input-search" aria-label="Buscar viajes" placeholder="Buscar viajes ...">
-              <span class="input-group-btn">
-                <button class="btn bg-white" type="button" aria-label="Buscar">
-                  <i class="fa fa-search text-primary"></i>
-                </button>
-              </span>
-            </div>
-            <a href="home.html" class="btn btn-default btn-mi-argentina bg-white">Home</a>
-            <div class="dropdown">
-              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                Destinos
-                <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                <li><a href="detalledestino.html">Misiones</a></li>
-                <li><a href="detalledestino.html">Córdoba</a></li>
-                <li><a href="detalledestino.html">Buenos Aires</a></li>
-                <li><a href="detalledestino.html">Tierra del Fuego</a></li>
-                <li><a href="detalledestino.html">Mendoza</a></li>
-                <li><a href="detalledestino.html">Santa Cruz</a></li>
-                <li><a href="detalledestino.html">Rio Negro</a></li>
-              </ul>
-            </div>
-          </div>
+
+  <header>
+    <nav class="navbar navbar-top navbar-default bg-celeste-argentina" role="navigation">
+      <div class="container">
+        <a class="navbar-brand" href="home.html" aria-label="MiArgentina">
+          <img alt="MiArgentina" src="img/argentina.gob.ar.png" height="50">
+        </a>
+
+        <div class="input-group text-center">
+          <input id="buscar" type="text" class="form-control input-search" aria-label="Buscar viajes" placeholder="Buscar viajes ...">
+          <span class="input-group-btn">
+                    <button class="btn bg-white" type="button" aria-label="Buscar">
+                        <i class="fa fa-search text-primary"></i>
+                    </button>
+                </span>
         </div>
-      </nav>
-    </header>
-  
+
+        <ul class="nav navbar-nav text-center">
+          <li><a href="home.html">Home</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Destinos <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="detalledestino.html">Misiones</a></li>
+              <li><a href="detalledestino.html">Córdoba</a></li>
+              <li><a href="detalledestino.html">Buenos Aires</a></li>
+              <li><a href="detalledestino.html">Tierra del Fuego</a></li>
+              <li><a href="detalledestino.html">Mendoza</a></li>
+              <li><a href="detalledestino.html">Santa Cruz</a></li>
+              <li><a href="detalledestino.html">Rio Negro</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
 
 <script type="text/javascript">
   var busqueda = document.getElementById('buscar');
@@ -200,7 +188,7 @@
           <div class="row">
             <div class="col-md-12">
               <ol class="breadcrumb pull-left">
-                
+
                 <li><a href="#">Destinos</a></li>
                 <li class="active"><span> San Antonio de Areco</span></li>
               </ol>

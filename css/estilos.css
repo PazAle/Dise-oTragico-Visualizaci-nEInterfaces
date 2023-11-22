@@ -212,3 +212,47 @@ input, select, textarea {
 
 }
 
+
+/*///////////////////////HEADER///////////////////////////*/
+
+ .container {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+ }
+
+.visible-xs.text-center {
+    text-align: center;
+}
+
+.input-group.text-center {
+    text-align: center;
+}
+
+.nav.navbar-nav.text-center {
+    text-align: center;
+}
+
+.nav.navbar-nav.text-center li a {
+    color: white;
+}
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 767px) {
+    .nav.navbar-nav.text-center {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .nav.navbar-nav.text-center li {
+        display: inline-block;
+    }
+
+}
+
