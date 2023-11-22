@@ -1,115 +1,119 @@
+/* Estilos generales */
+
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e0f7fa; /* Color celeste */
+    background-color: #e0f7fa;
 }
 
 main {
-    font-size: 1.4em; /* Tamaño de la tipografía aumentado */
+    font-size: 1.4em;
 }
 
+/* Tarjeta */
+
 .confirmation-card {
-    max-width: 80vw; /* Cambiamos el tamaño de la tarjeta */
-    height: 60vh;
+    width: 100%;
+    max-width: 900px; /* Ajusta según tus necesidades */
     margin: 20px auto;
     background-color: #fff;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1); /* Añadimos sombra */
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    display: flex; /* Utilizamos flexbox para distribuir las dos secciones */
+}
+
+/* Parte izquierda */
+
+.info-section {
+    flex: 2;
+    padding: 7%;
+    text-align: left;
+    position: relative;
+    display: flex; /* Utilizamos flexbox para distribuir los elementos internos */
+}
+
+
+.confirmation-button-section {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    background-color: #37bbed;
+    color: #fff;
+    cursor: pointer;
     display: flex;
-    flex-wrap: wrap; /* Para hacer responsive */
-    position: relative; /* Añadimos posición relativa para posicionamiento absoluto de los rectángulos internos */
-}
-
-.top-inner-rectangle {
-    position: absolute;
-    top: 20px;
-    left: 0;
-    width: 100%; /* Ajustamos el ancho del rectángulo interno en la parte izquierda */
-    background-color: #b2dfdb;
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
-}
-
-.inner-rectangle {
-    position: absolute;
-    bottom: 20px;
-    left: 0; /* Posicionamiento desde el borde izquierdo */
-    width: 100%; /* Ajustamos el ancho del rectángulo interno */
-    background-color: #b2dfdb; /* Color turquesa más claro */
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .image-container {
     width: 100%;
-    height: 60%; /* Establecemos la altura al 60% del contenedor */
+    height: 100%; /* Ajusta según tus necesidades */
     overflow: hidden;
     border-radius: 5px;
-    margin-top: 20px; /* Añadimos margen superior */
+    margin-top: 20px;
+    margin-bottom: 15px;
 }
 
 .image-container img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ajustamos la imagen para cubrir completamente el contenedor */
-    border-radius: 5px; /* Añadimos bordes redondeados */
-}
-
-.info-section {
-    flex: 2; /* Cambiamos a 70% del ancho */
-    padding: 7%;
-    text-align: left; /* Alineación a la izquierda */
-    position: relative; /* Añadimos posición relativa para posicionamiento absoluto del rectángulo interno */
-}
-
-.info-section ul {
-    margin-left: 20px; /* Espaciado izquierdo aumentado */
-}
-
-.confirmation-button-section {
-    flex: 1; /* Cambiamos a 30% del ancho */
-    padding: 20px;
-    text-align: center;
-    background-color: #37bbed; /* Color verde oscuro - Teal */
-    color: #fff;
-    cursor: pointer;
-    display: flex; /* Usamos flexbox para centrar verticalmente el contenido */
-    flex-direction: column; /* Alineamos el contenido en columna */
-    justify-content: flex-end; /* Centramos el contenido al final del contenedor */
-}
-
-.confirmation-button-section p {
-    margin-top: auto; /* Empujamos el párrafo hacia la parte inferior */
-}
-
-h2, p {
-    color: #333;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
+    object-fit: cover;
 }
 
 button {
     padding: 10px 20px;
-    font-size: 18px; /* Aumentamos el tamaño de la fuente */
+    font-size: 18px;
     cursor: pointer;
     border: none;
     border-radius: 5px;
-    background-color: #b2dfdb; /* Color verde oscuro - Teal */
+    background-color: #b2dfdb;
     color: seagreen;
-    transition: background-color 0.3s; /* Agregamos transición al color de fondo */
+    transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #0072b8; /* Cambiamos color al pasar el mouse */
+    background-color: #0072b8;
+}
+
+.texto_inferior {
     color: white;
 }
-.texto_inferior{
-    color: white;
+
+@media (max-width: 768px) {
+    .confirmation-card {
+        padding: 20px; /* Agregamos un espacio alrededor de la tarjeta */
+        flex-direction: column; /* Cambiamos a una disposición de una columna */
+    }
+
+    .info-section,
+    .confirmation-button-section {
+        flex: 1; /* Ambas secciones ocupan el 100% del ancho */
+        padding: 15px; /* Añadimos espacio interno a cada sección */
+    }
+
+    .info-section {
+        order: -1; /* Cambiamos el orden para que info-section esté arriba */
+    }
+
+
+    h2 {
+        font-size: 24px; /* Reducimos el tamaño de la fuente del encabezado */
+    }
+
+    p {
+        font-size: 14px; /* Reducimos el tamaño de la fuente del párrafo */
+    }
+
+    button {
+        font-size: 16px; /* Reducimos el tamaño de la fuente del botón */
+    }
+    ul{
+        font-size: 14px;
+    }
+
+    .image-container img {
+        content: url('../img/Turismo-Logo2.jpg'); /* Ruta de la nueva imagen para dispositivos móviles */
+    }
 }
